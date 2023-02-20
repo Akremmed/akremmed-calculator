@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator App </h1>
+    </header>
+
+    <div class="container">
+        <div class="container2">
+            <div class="calculator">
+                <div class="screen">
+                    <input type="text" id="screen" value="">
+                </div>
+
+                <div class="buttons">
+                    <div class="row1">
+                        <button onclick="insert('7')">7</button>
+                        <button onclick="insert('8')">8</button>
+                        <button onclick="insert('9')">9</button>
+                        <button id="operator" onclick="insert('/')">/</button>
+
+                    </div>
+
+                    <div class="row2">
+                        <button onclick="insert('4')">4</button>
+                        <button onclick="insert('5')">5</button>
+                        <button onclick="insert('6')">6</button>
+                        <button id="operator" onclick="insert('*')">x</button>
+
+                    </div>
+
+                    <div class="row3">
+                        <button onclick="insert('1')">1</button>
+                        <button onclick="insert('2')">2</button>
+                        <button onclick="insert('3')">3</button>
+                        <button id="operator" onclick="insert('-')">-</button>
+                    </div>
+
+                    <div class="row4">
+                        <button id="zero" onclick="insert('0')">0</button>
+                        <button onclick="insert('.')">.</button>
+                        <button id="operator" onclick="insert('+')">+</button>
+                    </div>
+
+                    <div class="row5">
+                        <button id="op" onclick="clean()">AC</button>
+                        <button id="op" onclick="delet()">DEL</button>
+                        <button id="op" class="equal" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="made">
+                <p>Made by Akrem Mohamed</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
